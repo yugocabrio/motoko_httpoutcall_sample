@@ -8,6 +8,6 @@ Entering the Japanese postcode retrieves the address through the [API](https://z
 ```
 dfx deploy
 ```
-## Thnaks
+## Thanks
 - https://github.com/krpeacock/motoko-outcalls-proxy
 - https://www.youtube.com/watch?v=il7rhFkZmoc
