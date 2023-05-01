@@ -4,7 +4,7 @@ Entering the Japanese postcode retrieves the address through the [API](https://z
 
 ![image](src/outcall_frontend/assets/Screenshot%202023-05-01%20at%2017.56.49.png)
 
-## how to deploy
+## How to deploy
 ```
 dfx deploy
 ```
