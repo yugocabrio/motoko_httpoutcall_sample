@@ -4,7 +4,8 @@ import Text "mo:base/Float";
 import Types "Types";
 
 actor {
-  public func proxy(url : Text) : async Types.CanisterHttpResponsePayload {
+  public func find_address(zipcode : Text) : async Types.CanisterHttpResponsePayload {
+    let url: Text = "https://zipcloud.ibsnet.co.jp/api/search?zipcode=" # zipcode;
 
     let transform_context : Types.TransformContext = {
       function = transform;

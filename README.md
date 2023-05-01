@@ -1,27 +1,13 @@
 # Motoko HTTP Outcall Example
+Simple example using HTTP outcall of Internet Computer∞.
+Entering the Japanese postcode retrieves the address through the [API](https://zipcloud.ibsnet.co.jp/doc/api).
 
-This example showcases the use of HTTP outcalls in the Motoko programming language. It is a simple proxy of an HTTP call to an arbitrary endpoint.
+![image](src/outcall_frontend/assets/Screenshot%202023-05-01%20at%2017.56.49.png)
 
-How to Use
-Install the dfx command-line interface, if you haven't already:
-
-```
-sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-```
-
-In the root directory of this example, deploy the code:
-
+## how to deploy
 ```
 dfx deploy
 ```
-
-Call the proxy function, passing a URL as an argument:
-
-```
-dfx canister call proxy_backend proxy "https://official-joke-api.appspot.com/random_joke"
-```
-
-Code Explanation
-The proxy function takes a URL as an argument and returns an asynchronous Types.CanisterHttpResponsePayload containing the response from the endpoint.
-
-The transform function is used to add security headers to the response from the endpoint. It takes a Types.TransformArgs object as an argument and returns an asynchronous Types.CanisterHttpResponsePayload object.
+## Thnaks
+- https://github.com/krpeacock/motoko-outcalls-proxy
+- https://www.youtube.com/watch?v=il7rhFkZmoc
